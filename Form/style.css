@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.943);
+}
+.main> button{
+    width: 100%;
+    background-color: rgb(14, 199, 138);
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+h2{
+    text-align: center;
+    color: white;
+    
+}
+.main >.button button{
+    /* background-color: rgb(14, 199, 138); */
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    width: 50%;
+    font-size: 18px;
+    color: white;
+}
+.main>.button{
+    width: 100%;
+    display: flex;
+}
+input[type="text"]{
+    padding: 5px 10px;
+    width: 50%;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.input{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+}
+input[type="email"],
+input[type="password"]{
+    padding: 4px 10px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.button>:nth-child(2){
+    background-color:rgba(0, 0, 0, 0.865);
+    
+}
+.button>:nth-child(1){
+    background-color: rgb(14, 199, 138);
+}
