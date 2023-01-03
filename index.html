@@ -1,346 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decorator</title>
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/f5b6191954.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="header">
-            <div class="h-left">
-                <h1 id="logo">GYMSTER</h1>
+      <header>
+        <div class="login">
+          <div class="login-left">
+            <div id="icon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
             </div>
-            <div class="h-right">
-                <div class="h-up">
-                    <div class="up-left">
-                        <p><i class="fa-solid fa-envelope"></i> 
-                             Ashishkv8452gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>
-                             +91774743767</p>
-                    </div>
-                    <div class="up-right">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-youtube"></i>
+            <div id="mail">
+              <i class="fa-solid fa-envelope"></i>
+              <p>ashishkv845@gmail.com</p>
+            </div>
+          </div>
+          <div class="login-right">
+            <div id="add">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Noida</p>
+            </div>
+            <div class="login-acc">
+              <div class="select">
+                <i class="fa-solid fa-user"></i>
+               <p>Hi Ashish Verma</p>
+              </div>
+              <div class="hide">
+              <a href="#">Account</a>
+              <a href="#">Profile</a>
+              <a href="#">Order</a>
+              <a href="#">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <!-- <div class="nav"> -->
+          <div class="nav-left">
+            <p>HOME</p>
+            <p>SERVICE</p>
+            <p>ABOUT US</p>
+            <p>GALLARY</p>
+          </div>
+          <div class="nav-middle">
+            <img class="logo" src="./image/logo.png" alt="logo" />
+          </div>
+          <div class="nav-right">
+            <p>VIDEOS</p>
+            <p>TESTIMONIALS</p>
+            <p>CONTACT US</p>
+          </div>
+          <!-- </div> -->
+        </nav>
+        <div class="ad">
+          <h2 id="dec">Decorators for</h2>
+          <h1 id="ad1">All Your Special Occasions</h1>
+          <button id="enq">Enqire Now</button>
+        </div>
+      </header>
+      <section>
+        <h2 id="ser">SERVICE</h2>
+        <div class="service">
+          <div class="ser">
+            <img class="img" src="./image/reception.jpg" alt="" />
+            <h4>Cocktail/Reception Parties</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              voluptatibus numquam quis?
+            </p>
+            <button class="enqire">Enqire Now</button>
+          </div>
+          <div class="ser">
+            <img class="img" src="./image/corporate.jpg" alt="" />
+            <h4>Corporate Parties</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              voluptatibus numquam quis?
+            </p>
+            <button class="enqire">Enqire Now</button>
+          </div>
+          <div class="ser">
+            <img class="img" src="./image/mussic.png" alt="" />
+            <h4>Music</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              voluptatibus numquam quis?
+            </p>
+            <button class="enqire">Enqire Now</button>
+          </div>
+          <div class="ser">
+            <img class="img" src="./image/light.jpg" alt="" />
+            <h4>Light Decoration</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              voluptatibus numquam quis?
+            </p>
+            <button class="enqire">Enqire Now</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="about">
+          <h2>ABOUT</h2>
+          <img id="ab-img" src="./image/about.jpg" alt="" />
+          <p id="ab-details">
+            We, Universe Decorators situated at Malad West, Mumbai, Maharashtra,
+            aim at providing and organizing unique weddings, theme decorations,
+            destination weddings, floral arrangements, corporate events, monsoon
+            shed and various religious, cultural & social events. It is our
+            experience that helps us in providing excellent personal service and
+            individual attention. We can help with all aspects of your wedding
+            and special celebratory occasions.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>GALLARY</h2>
+        <div id="gallary">
+          <div class="gal">
+            <img class="gal-img" src="./image/11.jpg" alt="" />
+          </div>
+          <div class="gal">
+            <img class="gal-img" src="./image/22.jpg" alt="" />
+          </div>
+          <div class="gal">
+            <img class="gal-img" src="./image/33.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="video">
+            <h2>VIDEOS</h2>
+            <div class="vid-up">
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p class="pr">COSTA RICA IN 4K 60fps HDR (ULTRA HD)</p>
 
-                    </div>
                 </div>
-                <div class="h-down">
-                    <div class="d-left">
-                        <p>HOME</p>
-                        <p>ABOUT</p>
-                        <p>CLASSES</p>
-                        <p>TRAINER</p>
-                        <p>CONTACT</p>
-                        
-                    </div>
-                    <div class="d-right">
-                        <button class="join">Join Us</button>
-                    </div>
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <p class="pr">COSTA RICA IN 4K 60fps HDR (ULTRA HD)</p>
+                </div>
+            </div>
+            <div class="vid-down">
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <p class="pr">COSTA RICA IN 4K 60fps HDR (ULTRA HD)</p>
+                </div>
+                <div class="vid">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <p class="pr">COSTA RICA IN 4K 60fps HDR (ULTRA HD)</p>
                 </div>
             </div>
         </div>
-        <section>
-            <div class="main-img">
-                <h5 id="h5">BEST GYM CENTER</h5>
-                <h1 id="h1">BUILD YOUR BODY STRONG WITH GYMSTER </h1>
-                <div class="btn">
-                    <button class="join">JOIN US</button>
-                    <button class="con">CONTACT US</button>
-                </div>
+      </section>
+      <section>
+        <div class="inq">
+            <H2>INQURY</H2>
+          <div class="inq-form">
+            <div class="inq-left">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Mobile No." />
+              <input type="email" placeholder="Email" />
             </div>
-        </section>
-        <section>
-            <div class="about">
-                <div class="ab-left">
-                    <img id="about-img" src="../img/about.jpg" alt="image">
-                </div>
-                <div class="ab-right">
-                    <div class="ab-up">
-                        <h3 id="ab">ABOUT US</h3>
-                        <H1 id="wel">WELCOME TO GYMSTER</H1>
-                        <h5 id="no3">Diam dolor diam ipsum tempor sit. Clita erat ipsum et lorem stet no labore lorem sit clita duo justo magna dolore</h5>
-                        <p id="no4">Nonumy erat diam duo labore clita. Sit magna ipsum dolor sed ea duo at ut. Tempor sit lorem sit magna ipsum duo. Sit eos dolor ut sea rebum, diam sea rebum lorem kasd ut ipsum dolor est ipsum. Et stet amet justo amet clita erat, ipsum sed at ipsum eirmod labore lorem.</p>
-                    </div>
-                    <div class="ab-down">
-                        <div class="ab-btn">
-                            <button id="btn1">ABOUT US</button>
-                            <button id="btn2">WHY CHOOSE US</button>
-                        
-                        </div>
-                        <div id="ab-p">
-                            <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="inq-right">
+              <textarea
+                placeholder="Massage"
+                name=""
+                id=""
+                cols="55"
+                rows="10"
+              ></textarea>
             </div>
-        </section>
-        <section>
-            <div class="adv-head">
-                <div class="adv-main">
-                    <div class="adv">
-                        <h2>Body Building</h2>
-                        <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet</p>
-                        <a href="#">Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="adv">
-                    
-                        <h2>Weight Lifting</h2>
-                        <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet</p>
-                        <a href="#">Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="adv">
-                        <h2>Muscle Building</h2>
-                        <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet</p>
-                        <a href="#">Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-               
-                <h1>30% DISCOUNT FOR THIS SUMMER </h1>
-                <button>BECOME A MEMBER</button>
+          </div>
+          <div class="inq-btn"><button id="inq-btn" is="submit">Submit</button></div>
+        </div>
+      </section>
+      <footer>
+        <div class="ftr">
+          <div class="f-left">
+            <p>HOME</p>
+            <p>SERVICE</p>
+            <p>ABOUT US</p>
+            <p>GALLARY</p>
+          </div>
+          <div class="f-right">
+            <div class="right-up">
+              <div id="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div id="mail">
+                <i class="fa-solid fa-envelope"></i>
+                <p>ashishkv845@gmail.com</p>
+              </div>
             </div>
-        </section>
-        <section>
-            <div class="time-main">
-                <h2>CLASS SHEDULE</h2>
-                <H1>WORKING HOURS</H1>
-                <div id="button">
-                    <button>MONDAY</button>
-                    <button>TUESDAY</button>
-                    <button>WEDNESDAY</button>
-                    <button>THURSDAY</button>
-                    <button>FRIDAY</button>
-                    <button>SATURDAY</button>
-                    <button>SUNDAY</button>
-                </div>
-                <div class="time">
-                    <div class="shedule">
-                        <h4>6.00AM - 8.00AM</h4>
-                        <h3>POWER LIFTING</h3>
-                        <p>JOHN DEO</p>
-                    </div>
-                    <div class="shedule">
-                        <h4>8.00AM - 10.00AM</h4>
-                        <h3>BODY BUILDING</h3>
-                        <p>JAMES TAYLOR</p>
-                    </div>
-                    <div class="shedule">
-                        <h4>10.00AM - 12.00AM</h4>
-                        <h3>CARDIO PROGRAM</h3>
-                        <p>JACK SOARROW</p>
-                    </div>
-                    <div class="shedule">
-                        <h4>12.00AM - 2.00PM</h4>
-                        <h3>WIEGHT LOOSE</h3>
-                        <p>JAMES</p>
-                    </div>
-                </div>
-                <div class="time">
-                    <div class="shedule">
-                        <h4>2.00PM - 4.00PM</h4>
-                        <h3>BODY BUILDING</h3>
-                        <p>ADAM PHILL</p>
-                    </div>
-                    <div class="shedule">
-                        <h4>4.00PM - 6.00PM</h4>
-                        <h3>MUSCLE BUILDING</h3>
-                        <p>JAMES ALIEN</p>
-                    </div>
-                    <div class="shedule">
-                        <h4>6.00PM - 8.00PM</h4>
-                        <h3>BODY BUILDING</h3>
-                        <p>PETER JOHN</p>
-                    </div>
-                    <div class="shedule">
-                        <h4>8.00PM - 10.00PM</h4>
-                        <h3>YOGA CLASS</h3>
-                        <p>JAMES</p>
-                    </div>
-                </div>
-
+            <div class="right-down">
+              <p>© Copyrights 2022 - 2023.Ashish Verma. All Rights Reserved.</p>
             </div>
-        </section>
-        <section>
-            <div class="main-team">
-                <h3>THE TEAM</h3>
-                <h1>EXPERT TRAINERS</h1>
-                <div class="team">
-                    <div class="trainer" id="trainer1">
-                       <div>
-                         <h1>JAMES TAILOR</h1>
-                         <P>TRAINER</P>
-                       </div>
-                    </div>
-                    <div class="trainer" id="trainer2">
-                       <div>
-                        
-                         <h1>JOHN DEO</h1>
-                         <P>TRAINER</P>
-                       </div>
-                    </div>
-                    <div class="trainer" id="trainer3">
-                       <div>
-                         
-                         <h1>ADAM PHILLIPS</h1>
-                         <P>TRAINER</P>
-                       </div>                       
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="test-main">
-                <div class="test-left"></div>
-                <div class="test-right">
-                    <h4>TESTIMONIAL</h4>
-                    <H2>OUR CLIENT SAY</H2>
-                    <p>🎗️🎗️ Dolor sit amet consectetur adipisicing elit. Vero itaque magnam veniam blanditiis porro quis libero. Porro excepturi voluptates facere!</p>
-                    <DIV >
-                        <img src="../img/testimonial-2.jpg" alt="">
-                       <div>
-                         <h3>CLIENT NAME</h3>
-                        <P>PROFESSIONAL</P>
-                       </div>
-                    </DIV>
-                </div>
-
-            </div>
-        </section>
-        <section>
-            <div class=blog-main>
-                <h3>OUR BLOG
-                </h3>
-                <h1>LATEST BLOG POST </h1>
-                <div class="blog">
-                    <div class="blog-con" id="blog1">
-                       <div class="b-con">
-                        <div id="first">
-                            <h6>1</h6>
-                            <h4>JANUARY</h4>
-                            <h6>2023</h6>
-
-                        </div>
-                        <div id="second">
-                            <H3>SED AMET TEMPOR AMET SIT KASD SEA LOREM</H3>
-                        </div>
-                       </div>
-                    </div>
-                    <div class="blog-con" id="blog2">
-                        <div  class="b-con">
-                            <div id="first">
-                                <h6>1</h6>
-                                <h4>JANUARY</h4>
-                                <h6>2023</h6>
-    
-                            </div>
-                            <div id="second">
-                                <H3>SED AMET TEMPOR AMET SIT KASD SEA LOREM</H3>
-                            </div>
-                           </div>
-                      
-                    </div>
-                    <div class="blog-con" id="blog3">
-                        <div class="b-con">
-                            <div id="first">
-                                <h6>1</h6>
-                                <h4>JANUARY</h4>
-                                <h6>2023</h6>
-    
-                            </div>
-                            <div id="second">
-                                <H3>SED AMET TEMPOR AMET SIT KASD SEA LOREM</H3>
-                            </div>
-                           </div>
-                                   
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="details">
-                <div class="get-in">
-                    <h1>GET IN TOUCH</h1>
-                    <p><i class="fa-thin fa-location-dot"></i>
-                        Noida</p>
-                    <p><i class="fa-solid fa-envelope"></i> 
-                         Ashishkv8452gmail.com</p>
-                   <p><i class="fa-solid fa-phone"></i>
-                         +91774743767</p>
-                    <div id="i">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        
-                    </div>
-                </div>
-                <div class="quick">
-                    <h1>QUICK LINKS</h1>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Home</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    About Us</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Class shedule</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Our Trainera</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Letest Blog</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Contuct Us</a>
-                </div>
-                <div class="popular">
-                    <h1>POPULAR LINKS</h1>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Home</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    About Us</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Class shedule</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Our Trainera</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Letest Blog</a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i>
-                    Contuct Us</a>
-                   
-                </div>
-                <div class="news">
-                    <h2>NEWS LETTER</h2>
-                    <H5>SUBSCRIBE OUR NEWSLETTER</H5>
-                    <P>Amet justo diam dolor rebum lorem sit stet sea justo kasd Lorem ipsum dolor sit amet.</P>
-                    <DIV><input type="text" placeholder="Your Email">
-                        <button>SIGN UP</button>
-                    </DIV>
-                </div>
-
-            </div>
-        </section>
-        <footer>
-            <div id="left">
-                ©️ ASHISH VERMA. All Rights Reserved. 
-            </div>
-            <div id="right">
-                <H5>DESIGNED BY - ASHISH KUMAR VERMA</H5>
-            </div>
-        </footer>
+          </div>
+        </div>
+        <div id="lang">
+          <p>CHANGE LANGUAGE :</p>
+          <a href="#">ENGLISH</a>
+          <a href="#">हिंदी</a>
+          <a href="#">தமிழ்</a>
+          <a href="#">ਪੰਜਾਬੀ</a>
+          <a href="#">मराठी</a>
+          <a href="#">ગુજરાતી</a>
+        </div>
+      </footer>
     </main>
-
-</body>
+  </body>
 </html>
