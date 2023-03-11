@@ -1,0 +1,30 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+table{
+    border: 1px solid aqua;
+    width: 100%;
+    border-collapse: collapse;
+}
+tr{
+   
+    
+}
+input[type="text"],
+input[type="number"],
+input[type="email"]
+
+{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 6px 12px;
+}
+input[type="submit"],
+input[type="reset"]
+{
+    width: 20%; 
+    padding: 8px 12px;
+    margin: 5px;
+    box-sizing: border-box;
+
+}
